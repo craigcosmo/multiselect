@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+	<script type="text/javascript" src="js/multiSelect.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('#catform').multiSelect(':');
+	});
+	</script>
+	<style type="text/css">
+	#catform{
+		text-align: center;
+		width: 600px;
+		margin: 40px auto;
+	}
+	select{
+		width: 170px;
+		height: 180px;
+		border: 10px solid rgba(0, 0, 0, 0.3);
+		border-radius: 5px;
+	}
+	option{
+		padding: 3px;
+	}
+	</style>
+</head>
+<body>
+<form id="catform" class="c">
+	<select size="10">
+		<option value="1" >electronics</option>
+		<option value="2" >phone</option>
+		<option value="3" >computer</option>
+	</select>
+	<select size="10" style="margin:0 15px">
+		<option value="1:1" >TV</option>
+		<option value="1:2" >DVD player & Bluray player</option>
+		<option value="1:3" >Digital camera</option>
+		
+		<option value="2:1" >touch screen</option>
+		<option value="2:2" >physical keyboard</option>
+		<option value="2:3" >touch screen and physical keyboard</option>
+		
+		<option value="3:1" >laptop</option>
+		<option value="3:2" >desktop</option>
+		<option value="3:3" >accessories</option>
+	</select>
+	<select size="10">
+		<option value="1:1:1" >LCD</option>
+		<option value="1:1:2" >plasma</option>
+		<option value="1:1:3" >LED</option>
+		<option value="1:2:1" >Sony</option>
+		<option value="1:2:2" >JVC</option>
+		<option value="1:2:3" >Toshiba</option>
+		<option value="1:3:1" >Sony</option>
+		<option value="1:3:2" >Nikon</option>
+		<option value="1:3:3" >Canon</option>
+		
+		<option value="2:1:1" >apple</option>
+		<option value="2:1:2" >htc</option>
+		<option value="2:1:3" >Samsung</option>
+		
+		<option value="2:2:1" >Nokia</option>
+		<option value="2:2:2" >Blackberry</option>
+		<option value="2:2:3" >Samsung</option>
+		
+		<option value="2:3:1" >Samsung</option>
+		<option value="2:3:2" >Nokia</option>
+		
+		<option value="3:1:1" >Apple</option>
+		<option value="3:1:2" >Sony<option>
+		<option value="3:1:3" >IBM</option>
+		
+		<option value="3:2:1" >Apple</option>
+		<option value="3:2:2" >Sony<option>
+		<option value="3:2:3" >IBM</option>
+		
+		<option value="3:3:1" >speaker</option>
+		<option value="3:3:2" >webcam<option>
+		<option value="3:3:3" >microphone</option>
+	</select>
+</form>
+</body>
+</html>
