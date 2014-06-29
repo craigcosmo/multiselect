@@ -25,17 +25,24 @@
 				});
 			}
 		})
-		selects.live('click change',function(){
-			var next_sib_index = $(this).index() + 1;
+		selects.on('click change', 'option', function(e){
+			var next_sib_index = $(e.target).parent().index() + 1;
+			console.log(next_sib_index);
+			// alert(next_sib_index);
 			for(n=next_sib_index; n<selects.length; n++){
+				console.log(next_sib_index);
 				selects.eq(n).each(function(){
 					this.length=0;
 				});
 			}
 			if(next_sib_index < selects.length){
-				var regex = new RegExp('^'+this.value+'(?='+delimiter+')');// match x if only followed by y
+				// alert(selects.length);
+				var regex = new RegExp('^'+$(e.target).val()+'(?='+delimiter+')');// match x if only followed by y
+				console.log(regex);
 				$.each(arr[next_sib_index], function(key,val){
+					// console.log('key: '+key +' val: '+val);	
 					if(key.match(regex)){
+						// console.log(selects.eq());
 						selects.eq(next_sib_index).append('<option value="'+ key +'">'+ val +'</option>');
 					}
 				});
