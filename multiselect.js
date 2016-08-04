@@ -97,8 +97,8 @@
 				
 				//  this extra two line is only used when integrate with chosen plugin
 				// if not use chosen can remove these two lines
-				var op = '<option value=""></option>';
-				selects.eq(next_sib_index).append(op);
+				// var op = '<option value=""></option>';
+				// selects.eq(next_sib_index).append(op);
 
 
 				$.each(arr[next_sib_index], function(key,val){
