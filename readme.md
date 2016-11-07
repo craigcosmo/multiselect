@@ -1,4 +1,6 @@
-#HTML5 AJAX upload
+# Multi Select Js plugin
+
+This plugin allows user to select a category in select box 
 
 ### Demo
 
